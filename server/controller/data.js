@@ -14,7 +14,12 @@ exports.insert = function(data_info, callback){
 
 exports.findlist = function(data_info, callback){
     models.radon.findAll({
-        where:data_info.name
+        where:{
+            radon_sensor:data_info.name
+        }, 
+        order:[
+            ['createdAt', 'DESC']
+        ]
     }).then(function(rows){
         callback(rows, null);
     }).catch(function(err){
