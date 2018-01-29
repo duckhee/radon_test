@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
     radon_sensor: DataTypes.STRING,
     radon_value:{ 
       type:DataTypes.STRING,
-      defaults:'0'
+      //defaults:'0'
     }
   }, {
     classMethods: {
