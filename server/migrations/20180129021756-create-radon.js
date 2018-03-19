@@ -12,7 +12,22 @@ module.exports = {
         type: Sequelize.STRING
       },
       radon_value: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
+      },
+      door_value1:{
+        type:Sequelize.STRING
+      },
+      door_value2:{
+        type:Sequelize.STRING
+      },
+      door_value3:{
+        type:Sequelize.STRING
+      },
+      door_value4:{
+        type:Sequelize.STRING
+      },
+      door_value5:{
+        type:Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
